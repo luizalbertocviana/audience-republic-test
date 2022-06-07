@@ -349,6 +349,8 @@
   (diameter random-graph) ; => maximal eccentricity
 )
 
+;; Answer
+
 (defn eccentricity [digraph vertex]
   (let [single-source-shortest-paths-final-state (dijkstra digraph vertex)]
     (->> single-source-shortest-paths-final-state
